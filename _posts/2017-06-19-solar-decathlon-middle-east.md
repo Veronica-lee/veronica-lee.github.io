@@ -26,7 +26,7 @@ pleasurable and relaxing experience at a leisurely pace.
 </div>
 
 <div class="post-image-container">
-  <img src="/img/solar-decathlon-middle-east/2.jpg" class="picture" alt=""/>
+  <img src="/img/solar-decathlon-middle-east/2.JPG" class="picture" alt=""/>
 </div>
 
 <div class="post-image-container">
@@ -38,7 +38,7 @@ pleasurable and relaxing experience at a leisurely pace.
 </div>
 
 <div class="post-image-container">
-  <img src="/img/solar-decathlon-middle-east/5.jpg" class="picture" alt=""/>
+  <img src="/img/solar-decathlon-middle-east/5.JPG" class="picture" alt=""/>
 </div>
 
 <a href="http://sdme.nyuad.io">Find out more!
