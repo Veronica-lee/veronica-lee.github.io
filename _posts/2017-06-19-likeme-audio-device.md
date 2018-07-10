@@ -7,13 +7,24 @@ categories: projects
 permalink: /:categories/likeme-audio-device/
 ---
   <div class="post">
-      <div class="post-title">
-        <p>LikeMe Audio Device</p>
+
+    <div class="post-title">
+      <p>LikeMe Audio Device</p>
+    </div>
+
+    <div class="post-subtitle">
+      <b>Product Design</b>
+    </div>
+
       <div class="post-content">
-        <p>LikeMe sets to solve the problems of social media obsession by imitating an environment of constant notifications and call receiving. The idea behind the device is to over-expose the user to social media to the extent of annoyance, instead of a pleasant reward. The device continuously plays all time famous Facebook, Twitter and Whatssup sounds, as well as iPhone ringtone with additional vibration effect. The machine is meant to trigger the user's instinct to get his hands on the phone and evoke self-critisizm. The day when social media becomes obsolete is yet to come.  </p>  
-  <div class="likeme-container">
-    <img src="/img/likeme-audio-device/1.jpg" class="picture" alt=""/>
-  </div>
+
+      <div class="likeme-container">
+        <img src="/img/likeme-audio-device/1.jpg" class="picture" alt=""/>
+      </div>
+
+      <div class="post-content-text">
+          <center>LikeMe sets to solve the problems of social media obsession by imitating an environment of constant notifications and call receiving. The idea behind the device is to over-expose the user to social media to the extent of annoyance, instead of a pleasant reward. The device continuously plays all time famous Facebook, Twitter and Whatssup sounds, as well as iPhone ringtone with additional vibration effect. The machine is meant to trigger the user's instinct to get his hands on the phone and evoke self-critisizm. The day when social media becomes obsolete is yet to come.  </center>  
+          </div>
 
   <div class="post-image-container">
     <img src="/img/likeme-audio-device/2.jpg" class="picture" alt=""/>

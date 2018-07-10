@@ -10,9 +10,13 @@ permalink: /:categories/bike-light/
     <div class="post-title">
       <p>Design and Innovation</p>
 
-      <div class="post-content">
-        <p> </p>
-      </div>
+        <div class="post-subtitle">
+          <b>Accelerated January Term Class</b>
+        </div>
+
+        <div class="post-content">
+          <p> </p>
+        </div>
 
 <div class="post-image-container">
   <img src="/img/bike-light/2.jpg" class="picture" alt=""/>
