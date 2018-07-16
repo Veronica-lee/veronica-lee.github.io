@@ -1,5 +1,5 @@
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
+p, b,blockquote, pre, hr,
 dl, dd, ol, ul, figure
   img.wp-smiley,
   img.emoji {
@@ -18,14 +18,50 @@ dl, dd, ol, ul, figure
 
 /*Fonts*/
 @font-face {
+   font-family: 'NunitoSans-Black';
+   src:  url('../fonts/NunitoSans-Black.ttf') format ('truetype');
+}
+
+@font-face {
+   font-family: 'JosefinSans-Bold';
+   src:  url('../fonts/JosefinSans-Bold.ttf') format ('truetype');
+}
+
+@font-face {
+   font-family: 'JosefinSans-Thin';
+   src:  url('../fonts/JosefinSans-Thin.ttf') format ('truetype');
+}
+
+@font-face {
+   font-family: 'JosefinSans-Light';
+   src:  url('../fonts/JosefinSans-Light.ttf') format ('truetype');
+}
+
+@font-face {
+   font-family: 'NunitoSans-ExtraBold';
+   src:  url('../fonts/NunitoSans-ExtraBold.ttf') format ('truetype');
+}
+
+@font-face {
+   font-family: 'NunitoSans-Bold';
+   src:  url('../fonts/NunitoSans-Bold.ttf') format ('truetype');
+}
+
+@font-face {
    font-family: 'NunitoSans-Light';
-   src:  url('../fonts/NunitoSans-Light.ttf') format ('truetype');
+   src:  url('../fonts/NunitoSans-Light.ttf') format('truetype');
 }
 
 @font-face {
    font-family: 'NunitoSans-ExtraLight';
    src:  url('../fonts/NunitoSans-ExtraLight.ttf') format('truetype');
 }
+
+@font-face {
+   font-family: 'NunitoSans-Bold';
+   src:  url('../fonts/NunitoSans-Bold.ttf') format('truetype');
+}
+
 
 @font-face {
    font-family: 'NunitoSans-Regular';
@@ -36,7 +72,7 @@ dl, dd, ol, ul, figure
 
 /*Basic styling*/
 body {
-  font-family: 'Lato-Regular';
+  font-family: 'NunitoSans-Light';
   color: #111;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -68,7 +104,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 10px; }
+  font-size: 12px; }
 
 /*Lists*/
 ul, ol {
@@ -87,15 +123,15 @@ a {
   text-decoration: none;}
   a:visited {
     color: #000000;
-    text-align: center;
-    text-decoration: underline;}
-    @media screen and (max-width: 700px) {
+    text-align: left;
+    text-decoration: none;}
+    @media screen and (max-width: 900px) {
       a:visited {
         text-decoration: none;} }
   a:hover {
     color: #111;
-    text-decoration: underline;}
-    @media screen and (max-width: 700px) {
+    text-decoration: none;}
+    @media screen and (max-width: 900px) {
       a:hover {
         text-decoration: none;
         } }
@@ -157,10 +193,10 @@ pre {
   max-width: 70%;
   margin-right: auto;
   margin-left: auto;}
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     .wrapper {
       max-width: 90%;
-      margin-left: 3.5%} }
+      margin-left: auto;} }
 
 
 /*Clearfix*/
@@ -188,28 +224,66 @@ pre {
   min-height:24px;
   position: relative; }
 
-.site-title {
-  font-family:'Lato-Regular';
-  font-weight:900;
-  font-size: 26px;
-  letter-spacing: 0.7px;
-  margin-bottom:15px;
+.site-title-name {
+  font-family:'JosefinSans-Light';
+  color: #000000;
+  position: absolute;
+  font-size: 35px;
   margin-top: 30px;
   float: left;
   line-height: 64px;}
   .site-title, .site-title:visited {
     color: #000000; }
-  @media screen and (max-width: 700px) {
-    .site-title {
+  @media screen and (max-width: 900px) {
+    .site-title-name {
       font-size: 22px;
       float: left;
     }
   }
 
+  .site-title-lastname {
+    color: #000000;
+    padding-left: 188px;
+    font-family:'JosefinSans-Bold';
+    position: absolute;
+    font-size: 35px;
+    margin-top: 30px;
+    float: left;
+    line-height: 64px;}
+    .site-title, .site-title:visited {
+      color: #000000; }
+    @media screen and (max-width: 900px) {
+      .site-title-lastname {
+        font-size: 22px;
+        padding-left: 117px;
+        float: left;
+      }
+    }
+
+  .site-subtitle {
+    position: relative;
+    color:#777474;
+    display: block;
+    float: right;
+    font-family: 'JosefinSans-Light';
+    font-size: 20px;
+    margin-top: 77px;
+    padding-left: 82px;
+    float: left;
+  }
+  @media screen and (max-width: 900px) {
+    .site-subtitle {
+      font-size: 18px;
+      padding-left: 5px;
+      margin-top: 69px;
+      float: left;
+    }
+  }
+
 .site-nav {
-  font-family:'NunitoSans-Extralight';
+  font-family:'NunitoSans-ExtraLight';
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 40px;
   margin-bottom: 30 px;
   margin-right: 2%;
@@ -220,13 +294,13 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #777474;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       line-height: 18px;
       margin-right: 50px; }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     .site-header {
            width: 100%;
          }
@@ -322,7 +396,7 @@ pre {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -369,17 +443,31 @@ pre {
 
 .post-title {
   width: 100%;
-  margin-right: 2%;
-  padding-top: 40px;
-  font-family: 'NunitoSans-Regular';
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'NunitoSans-Light';
   font-size: 40px;
-  letter-spacing: 0.7px;
   line-height: 1; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     .post-title {
       margin-right: 0;
       font-size: 20px;
-      padding-top: 1px;} }
+      padding-top: 25px;} }
+
+  .post-subtitle {
+    width: 100%;
+    text-align:center;
+    padding-top: 10px;
+    font-family: 'NunitoSans-ExtraLight';
+    font-size: 25px;
+    color: #777474;
+    line-height: 1; }
+    @media screen and (max-width: 900px) {
+      .post-subtitle {
+        margin-right: 0;
+        font-size: 15px;
+        padding-top: 1px;} }
+  }
 
 .post-content {
   padding-top: 40px;
@@ -390,7 +478,7 @@ pre {
   margin: 0 auto;
   font-family: 'NunitoSans-ExtraLight';
   font-size: 18px; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     .post-content {
       margin: 0 auto;
       width: 100%;
@@ -399,19 +487,33 @@ pre {
 
   .post-content h2 {
     font-size: 18px; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       .post-content h2 {
         font-size: 12px; } }
   .post-content h3 {
     font-size: 12px; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       .post-content h3 {
         font-size: 12px; } }
   .post-content h4 {
     font-size: 12px; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       .post-content h4 {
         font-size:12px; } }
+
+.post-content-text {
+  font-family: 'NunitoSans-ExtraLight';
+  font-size: 20px;
+  margin: 0 auto;
+  width:60%;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 900px) {
+  .post-content-text {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 15px;} }
 
 
 /* Highlighting styles*/
@@ -427,21 +529,21 @@ pre {
     color: #a61717;
     background-color: #e3d2d2; }
   .highlight .k {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .o {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .cm {
     color: #998;
     font-style: italic; }
   .highlight .cp {
     color: #999;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .c1 {
     color: #998;
     font-style: italic; }
   .highlight .cs {
     color: #999;
-    font-weight: bold;
+    font-weight: normal;
     font-style: italic; }
   .highlight .gd {
     color: #000;
@@ -466,22 +568,22 @@ pre {
   .highlight .gp {
     color: #555; }
   .highlight .gs {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .gu {
     color: #aaa; }
   .highlight .gt {
     color: #a00; }
   .highlight .kc {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kd {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kp {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kr {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kt {
     color: #458;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .m {
     color: #099; }
   .highlight .s {
@@ -492,17 +594,17 @@ pre {
     color: #0086B3; }
   .highlight .nc {
     color: #458;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .no {
     color: #008080; }
   .highlight .ni {
     color: #800080; }
   .highlight .ne {
-    color: #900;
-    font-weight: bold; }
+    color: #700;
+    font-weight: normal; }
   .highlight .nf {
-    color: #900;
-    font-weight: bold; }
+    color: #700;
+    font-weight: normal; }
   .highlight .nn {
     color: #555; }
   .highlight .nt {
@@ -510,7 +612,7 @@ pre {
   .highlight .nv {
     color: #008080; }
   .highlight .ow {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .w {
     color: #bbb; }
   .highlight .mf {
@@ -542,7 +644,7 @@ pre {
   .highlight .s1 {
     color: #d14; }
   .highlight .ss {
-    color: #990073; }
+    color: #970073; }
   .highlight .bp {
     color: #999; }
   .highlight .vc {
@@ -560,7 +662,7 @@ pre {
       width: 70%;
       margin-left: 15%;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       .content-container {
         width: 90%;
         margin-left: 5%} }
@@ -574,7 +676,7 @@ pre {
   margin-bottom: 20px;
   margin-right: 2%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .work {
     margin-bottom: 5px; } }
 
@@ -589,7 +691,7 @@ pre {
 }
 
 .work:hover .caption {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -612,15 +714,15 @@ img.picture {
 
 .caption:hover .caption-text h3 {
   text-transform: uppercase;
-  letter-spacing: 1.15px;
-  font-family:'NunitoSans-ExtraLight';
-  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-family:'NunitoSans-Light';
+  font-size: 18px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: ;
   vertical-align: baseline;
   color: #ffffff;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .caption:hover .caption-text h3 {
     font-size: 14px;
     text-align: center;} }
@@ -632,14 +734,14 @@ img.picture {
   margin-top: 70px;
   text-align: center;
   font-weight: 200px;}
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     .copyright {
       font-size: 12px; } }
 
 .cv {
   position: relative;
   font-family: 'NunitoSans-Light';
-  color: #000000;
+  color: #85929E;
   font-size: 16px;
   text-align: center;
   display: block;
@@ -647,10 +749,42 @@ img.picture {
   font-weight: 200px;
   margin-top: 20px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .cv {
+      color: #85929E;
     font-size: 14px; } }
 
+.socialmedia {
+  height: auto;
+  position: relative;
+  align-content: center;
+  display: block;
+  margin: 0 auto;
+  width: 8%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .socialmedia {
+    width: 30%;
+    margin-top: 2px;} }
+
+.instagram {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+}
+@media screen and (max-width: 900px) {
+  .instagram {
+    width: 10%;
+    margin-top: 2px;} }
+
+.linkedin {
+  position: relative;
+  display:inline-block;
+  float: right;
+  width: 30%;
+}
 
 .fa {
     display: inline-block;
@@ -674,9 +808,9 @@ img.picture {
   margin-top: 40px;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .myphoto {
-    width: 40%;
+    width: 30%;
     margin-top: 2px;} }
 
 
@@ -689,7 +823,7 @@ img.picture {
   font-family: 'NunitoSans-ExtraLight';
   font-size: 18px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .aboutme {
     width: 85%;
     font-size: 14px; } }
@@ -698,8 +832,9 @@ img.picture {
   font-family: 'NunitoSans-ExtraLight';
   font-size: 18px;
   text-align: left;
-  margin-bottom: 30px;}
-  @media screen and (max-width: 700px) {
+  margin-top: 40px;
+  margin-bottom: 20px;}
+  @media screen and (max-width: 900px) {
     .contact {
       font-size: 14px;
       margin-bottom: 1px;} }
@@ -716,7 +851,7 @@ img.picture {
   font-family: 'NunitoSans-ExtraLight';
   font-size: 18px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .contact-details-right {
     font-size: 14px; } }
 
@@ -764,9 +899,16 @@ input[type=submit]:hover {
 }
 
 .likeme-container{
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
-  padding-bottom: 65px;
+  padding-bottom: 20px;
+}
+
+.switch-container{
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .house-container{
@@ -778,7 +920,8 @@ input[type=submit]:hover {
 .kilns-container{
   margin: 0 auto;
   width:75%;
-  padding-bottom: 65px;
+  padding-top: 10px;
+  padding-bottom: 35px;
 }
 
 .igem-container{
@@ -795,7 +938,7 @@ input[type=submit]:hover {
   overflow: hidden;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .post-image-container {
     width: 100%;
     padding-bottom: 3px;} }
@@ -809,7 +952,7 @@ input[type=submit]:hover {
   padding-right: 1%;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .half-container-left {
     padding-bottom: 5px;} }
 
@@ -822,7 +965,7 @@ input[type=submit]:hover {
   padding-left: 1%;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .half-container-right {
     padding-bottom: 5px;} }
 
@@ -836,11 +979,17 @@ input[type=submit]:hover {
   font-family: 'NunitoSans-Regular';
   font-size:50px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .veronica-lee-container {
     font-size: 24px;} }
 }
 
+.logo-container{
+  width: 5%;
+  position: relative;
+  display: inline-block;
+
+}
 .page-title {
   padding-left: 0;
   padding-right: 20px;
