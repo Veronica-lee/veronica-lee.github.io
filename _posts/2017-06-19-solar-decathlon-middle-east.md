@@ -40,6 +40,10 @@ permalink: /:categories/solar-decathlon-middle-east/
 </div>
 
 <div class="post-image-container">
+  <img src="/img/solar-decathlon-middle-east/7.jpg" class="picture" alt=""/>
+</div>
+
+<div class="post-image-container">
   <img src="/img/solar-decathlon-middle-east/3.jpg" class="picture" alt=""/>
 </div>
 
@@ -49,6 +53,10 @@ permalink: /:categories/solar-decathlon-middle-east/
 
 <div class="post-image-container">
   <img src="/img/solar-decathlon-middle-east/5.JPG" class="picture" alt=""/>
+</div>
+
+<div class="post-image-container">
+  <img src="/img/solar-decathlon-middle-east/6.jpg" class="picture" alt=""/>
 </div>
 
 <a href="http://sdme.nyuad.io">Find out more!
