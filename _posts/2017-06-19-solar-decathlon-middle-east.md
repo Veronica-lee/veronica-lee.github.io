@@ -32,10 +32,6 @@ permalink: /:categories/solar-decathlon-middle-east/
 
 
 <div class="post-image-container">
-  <iframe width="1080" height="600" src="https://www.youtube.com/embed/5AgURsl-hMI" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="post-image-container">
   <img src="/img/solar-decathlon-middle-east/2.JPG" class="picture" alt=""/>
 </div>
 
