@@ -32,7 +32,7 @@ permalink: /:categories/solar-decathlon-middle-east/
 
 
 <div class="post-image-container">
-  <img src="/img/solar-decathlon-middle-east/10.JPG" class="picture" alt=""/>
+  <img src="/img/solar-decathlon-middle-east/10.jpg" class="picture" alt=""/>
 </div>
 
 <div class="post-image-container">
