@@ -59,4 +59,20 @@ permalink: /:categories/solar-decathlon-middle-east/
   <img src="/img/solar-decathlon-middle-east/7.jpg" class="picture" alt=""/>
 </div>
 
+<div class="post-image-container">
+  <img src="/img/solar-decathlon-middle-east/8.jpg" class="picture" alt=""/>
+</div>
+
+<div class="post-image-container">
+  <img src="/img/solar-decathlon-middle-east/9.jpg" class="picture" alt=""/>
+</div>
+
+<div class="post-image-container">
+  <img src="/img/solar-decathlon-middle-east/10.jpg" class="picture" alt=""/>
+</div>
+
+<div class="post-image-container">
+  <img src="/img/solar-decathlon-middle-east/11.jpg" class="picture" alt=""/>
+</div>
+
 <a href="http://sdme.nyuad.io">Find out more!
