@@ -8,7 +8,7 @@ permalink: /:categories/light-switch/
 ---
   <div class="post">
     <div class="post-title">
-      <p>Smart Home Light Switch</p>
+      <p>Prototype of Smart Home Light Switch</p>
     </div>
 
 
@@ -23,7 +23,7 @@ permalink: /:categories/light-switch/
         </div>
 
         <div class="post-content-text">
-            <center>A Smart Home Light Switch snaps over an existing switch and connects to a home WiFi enabling remote control features such as scheduling the lights around daily routines. Small and simple, the product doesn't require any re-wiring for installation. It was designed for NOA-Labs office in Shenzhen, China. </center>  
+            <center>A Smart Home Light Switch snaps over an existing switch and connects to a home WiFi enabling remote control features such as scheduling the lights around daily routines. Small and simple, the product doesn't require any re-wiring for installation. It was designed for NOA-Labs office in Shenzhen, China. Current version is the first prototype.</center>  
             </div>
 
   <div class="post-image-container">
